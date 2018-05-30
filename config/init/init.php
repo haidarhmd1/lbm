@@ -11,7 +11,7 @@
 		private $password;
 		private $dbname;
 
-		public function connect(){
+		protected function connect(){
 			//69.73.184.9
 			$this->servername = "69.73.182.184";
 			$this->username = "lebmotor_motors2";
@@ -20,17 +20,10 @@
 
 			$conn = new mysqli($this->servername,$this->username,$this->password,$this->dbname);
 
-			if($conn->connect_error){
-				echo "error";
-			}else{
-				echo "success!";
-			}
+			return $conn;
 
 		}
 
 	}
-
-	$connect = new DBConnecter();
-	$connect->connect();
 
 ?>
