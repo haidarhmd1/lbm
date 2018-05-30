@@ -1,0 +1,152 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: sans-serif;
+}
+
+.banner-above{
+    width: 100%;
+    height: 80px;
+    background: #e24141;
+    box-shadow: 0 -6px 55px 0px;
+}
+
+#logo2{
+    padding: 15px;
+    float: right;
+}
+
+.banner-container{
+    width: 100%;
+    margin: auto;
+}
+
+
+.wrapper::after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border: 2px solid #ffdc00;
+}
+
+.sidebar {
+    position: absolute;
+    margin-left: 5px;
+    height: auto;
+    width: 270px;
+    background: #e24141;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 11px 4px 39px -25px black;
+}
+
+.maincontent{
+    height: 100%;
+    padding: 50px;
+    padding-left: 315px;
+}
+
+/* navigation css */
+
+.profile-container{
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.image-container {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #ffaa3e;
+    border-radius: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    margin: auto;
+    position: relative;
+    top: 20px;
+    width: 95%;
+}
+
+#navigation-cms{
+    margin-top: 65px;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+
+#navigation-cms li{
+    float: none;
+}
+
+#navigation-cms li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    padding: 15px;
+    transition: 0.2s linear;
+}
+
+.profile-settings{
+    text-align: center;
+}
+.profile-details{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#navigation-cms li:hover a{
+    background: white;
+    color: black;
+}
+
+
+#setting-nav{
+    line-height: 10px;
+    margin-top: 35px;;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+#setting-nav:first-child{
+    border-top: 1px solid white;
+}
+
+#setting-nav li{
+    float: none;
+}
+
+#setting-nav li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+
+#setting-nav li:hover a{
+    background: white;
+    color: black;
+}
+
+.active{
+    background: #ffaa3e;
+    color: black !important;
+}
+
+
+
+/* css style */
+
+.center-text{
+    text-align: center;
+}

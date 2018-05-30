@@ -1,0 +1,117 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+
+    font-family: sans-serif;
+}
+
+.banner-above{
+    width: 100%;
+    height: 80px;
+    background: #0058ff;
+}
+
+#logo2{
+    padding: 15px;
+    float: right;
+}
+
+.banner-container{
+    width: 85%;
+    margin: auto;
+}
+
+
+.main-content{
+    position: relative;
+}
+
+.login-container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 150px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    text-align: center;
+    background: #0058ff;
+}
+
+#welcome-login{
+    height:50px;
+    background: #0058ff;
+    color: #ffffff;
+    border-radius: 7px;
+	-webkit-box-shadow: inset 0px 1px 2px 0px white;
+	   -moz-box-shadow: inset 0px 1px 2px 0px white;
+    box-shadow: inset 0px 1px 2px 0px white;
+}
+
+#welcome-login p{
+    font-size: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.input-fields{
+    background: #0058ff;
+    width: 250px;
+    height: 88px;
+    border-radius: 5px;
+    margin: 35px auto 0px auto;
+	-webkit-box-shadow: inset -1px -1px 5px -3px white;
+	   -moz-box-shadow: inset -1px -1px 5px -3px white;
+	        box-shadow: inset -1px -1px 5px -3px white;
+}
+
+.input-group-addon{
+    background: #ffaa3e;
+    border: none;
+}
+
+.input-group{
+    padding: 5px;
+}
+
+.input-form{
+    width: 250px;
+    background: transparent;
+    border: none;
+    transition: 0.2s linear;
+}
+
+.input-form:focus{
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none
+}
+
+.cms-button{
+    margin: 65px auto 0px auto;
+    background: #ffaa3e;
+    border: none;
+    padding: 10px 102px;
+    border-radius: 7px;
+    color: #93481b;
+    font-size: 14px;
+    transition: 0.2s linear;
+    font-weight: bold;
+}
+
+
+@media all and (max-width: 745px){
+    .banner-above {
+    height: 150px;
+    background: black;
+}
+
+
+.banner-above::after {
+    top: 150px;
+}
+
+
+}

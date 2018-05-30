@@ -1,0 +1,6 @@
+[21-May-2018 10:23:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55
+[21-May-2018 10:23:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55
+[21-May-2018 10:23:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55
+[21-May-2018 10:24:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55
+[21-May-2018 10:24:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55
+[21-May-2018 10:25:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/extrememindz/public_html/newsite/cms/php/login.php on line 55

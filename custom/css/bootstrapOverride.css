@@ -1,0 +1,70 @@
+
+.container-fluid{
+	padding: 0px;
+}
+
+.navbar-inverse{
+	height: 125px;
+	border: none;
+    color: black !important;
+    border-radius: 0px;
+    background: transparent;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border: none;
+}
+.navbar-inverse .navbar-toggle {
+     border: none; 
+}
+.active{
+    border-bottom: 2px solid #ff0000;
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background: transparent;
+	border: none;
+	color: #ed2224 !important;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+
+#side-menu {
+    /*top: 90px !important;*/
+    min-width: 250px !important;
+}
+
+.media{
+	height: 250px;
+}
+
+.media-heading{
+	text-align: left;
+}
+
+.close {
+    position: relative;
+    top: -15px;
+}
+
+.paddRight{
+    padding-right: 25px !important;
+}
+
+@media (min-width: 1200px){
+	.container {
+	    width: 975px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.navbar-collapse{
+		background: white;
+	}
+
+}
