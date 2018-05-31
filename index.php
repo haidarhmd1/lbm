@@ -1,5 +1,12 @@
 <?php include('header.php'); ?>
 
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<button class="clickme">Test</button>
+		</div>
+	</div>
+</div>
 
 <div class="container-fluid" id="directories">
 	<div class="container">
@@ -313,5 +320,20 @@
 			</div>
 		</div>
 </div>
+<script>
 
+	$(document).ready(function(){
+
+		$(".clickme").click(function(e){
+			$.get('config/logic/testing.php', { action: 'getit'}, function(data){
+				var jsResp = JSON.parse(data);
+				console.log(jsResp.length);
+			});
+
+		});
+
+			// alert("build");
+	});
+
+</script>
 <?php include ('footer.php'); ?>
