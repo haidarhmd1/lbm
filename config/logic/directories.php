@@ -18,6 +18,18 @@
                 echo json_encode($arrayName);
             }
         }
+        public function selectStmtSpec($table,$id)
+        {
+            $sql = "SELECT * FROM ".$table." WHERE ".$id;
+            $res = $this->connect()->query($sql);
+
+            if($res->num_rows > 0){
+                while($row = $res->fetch_assoc()){
+                    $arrayName[] = $row;
+                }
+                echo json_encode($arrayName);
+            }
+        }
         public function selectStmtLmt($table,$limit)
         {
             $sql = "SELECT * FROM ".$table." LIMIT ".$limit;
