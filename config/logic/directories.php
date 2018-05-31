@@ -13,7 +13,7 @@
 
             if($res->num_rows > 0){
                 while($row = $res->fetch_assoc()){
-                    $arrayName[] = array($row);
+                    $arrayName[] = $row;
                 }
                 echo json_encode($arrayName);
             }
@@ -25,7 +25,7 @@
 
             if($res->num_rows > 0){
                 while($row = $res->fetch_assoc()){
-                    $arrayName = array($row);
+                    $arrayName[] = $row;
                 }
                 echo json_encode($arrayName);
             }

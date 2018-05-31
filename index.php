@@ -1,13 +1,5 @@
 <?php include('header.php'); ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<button class="clickme">Test</button>
-		</div>
-	</div>
-</div>
-
 <div class="container-fluid" id="directories">
 	<div class="container">
 		<div class="row" style="padding-bottom: 25px;">
@@ -324,16 +316,52 @@
 
 	$(document).ready(function(){
 
-		$(".clickme").click(function(e){
-			$.get('config/logic/testing.php', { action: 'getit'}, function(data){
-				var jsResp = JSON.parse(data);
-				console.log(jsResp.length);
+
+	$("#maintenance").on("click", function(e){
+		e.preventDefault(); 
+			$.get('config/logic/dirRequests.php', { action: 'getit'}, maintenanceResponse => {
+				var jsResp = JSON.parse(maintenanceResponse);
+					var htmlContent = '<select class="form-control"><option>Select</option>';
+					for(let i = 0; i<jsResp.length; i++){
+						htmlContent += '<option value="'+jsResp[i].id+'">'+jsResp[i].name+'</option>';
+					}
+					htmlContent += '</select>';
+				$( "#collapse0" ).html(htmlContent);
 			});
 
-		});
-
-			// alert("build");
 	});
+
+	
+	$("#banks").on("click", function(e){
+		e.preventDefault(); 
+			$.get('config/logic/dirRequests.php', { action: 'getit'}, bankResponse => {
+				var jsResp = JSON.parse(bankResponse);
+					var htmlContent = '<select class="form-control"><option>Select</option>';
+					for(let i = 0; i<jsResp.length; i++){
+						htmlContent += '<option value="'+jsResp[i].id+'">'+jsResp[i].name+'</option>';
+					}
+					htmlContent += '</select>';
+				$( "#collapse0" ).html(htmlContent);
+			});
+
+	});
+
+	
+	$("#insurance").on("click", function(e){
+		e.preventDefault(); 
+			$.get('config/logic/dirRequests.php', { action: 'getit'}, insuranceResponse => {
+				var jsResp = JSON.parse(insuranceResponse);
+					var htmlContent = '<select class="form-control"><option>Select</option>';
+					for(let i = 0; i<jsResp.length; i++){
+						htmlContent += '<option value="'+jsResp[i].id+'">'+jsResp[i].name+'</option>';
+					}
+					htmlContent += '</select>';
+				$( "#collapse0" ).html(htmlContent);
+			});
+
+	});
+
+});
 
 </script>
 <?php include ('footer.php'); ?>
